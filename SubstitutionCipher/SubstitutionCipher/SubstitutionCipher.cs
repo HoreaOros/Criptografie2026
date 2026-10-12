@@ -22,12 +22,12 @@ namespace SubstitutionCipher
         }
         public override void Decrypt()
         {
-            plainText = Substitute(ciperText, decryptionKey);
+            plainText = Substitute(cipherText, decryptionKey);
         }
 
         public override void Encrypt()
         {
-            ciperText = Substitute(plainText, encryptionKey);
+            cipherText = Substitute(plainText, encryptionKey);
         }
     }
 }

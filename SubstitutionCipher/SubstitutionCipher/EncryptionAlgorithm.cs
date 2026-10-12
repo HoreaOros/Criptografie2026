@@ -8,10 +8,10 @@ namespace SubstitutionCipher
 {
     abstract internal class EncryptionAlgorithm
     {
-        protected string plainText;
-        protected string ciperText;
-        protected Dictionary<char, char> encryptionKey;
-        protected Dictionary<char, char> decryptionKey;
+        protected string? plainText;
+        protected string? cipherText;
+        protected Dictionary<char, char>? encryptionKey;
+        protected Dictionary<char, char>? decryptionKey;
         abstract public void Encrypt();
         abstract public void Decrypt();
 
@@ -34,12 +34,12 @@ namespace SubstitutionCipher
         {
             get
             {
-                return ciperText;
+                return cipherText;
             }
 
             set
             {
-                ciperText = value;
+                cipherText = value;
                 Decrypt();
             }
         }
