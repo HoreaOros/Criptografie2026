@@ -11,7 +11,7 @@ namespace SubstitutionCipher
         protected string plainText;
         protected string ciperText;
         protected Dictionary<char, char> encryptionKey;
-        protected Dictionary<char, char> decriptionKey;
+        protected Dictionary<char, char> decryptionKey;
         abstract public void Encrypt();
         abstract public void Decrypt();
 
