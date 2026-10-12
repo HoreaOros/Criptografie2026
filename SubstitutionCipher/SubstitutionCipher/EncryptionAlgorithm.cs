@@ -43,5 +43,25 @@ namespace SubstitutionCipher
                 Decrypt();
             }
         }
+        public string EncryptionKey
+        {
+            get
+            {
+                StringBuilder sb = new();
+                foreach(char c in encryptionKey.Values)
+                    sb.Append(c);
+                return sb.ToString();
+            }
+        }
+        public string DecryptionKey
+        {
+            get
+            {
+                StringBuilder sb = new();
+                foreach (char c in decryptionKey.Values)
+                    sb.Append(c);
+                return sb.ToString();
+            }
+        }
     }
 }
