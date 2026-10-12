@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubstitutionCipher
 {
-    internal class ROT13 : RotationCipher
+    public class ROT13 : RotationCipher
     {
         public ROT13(): base(13) 
         { 
