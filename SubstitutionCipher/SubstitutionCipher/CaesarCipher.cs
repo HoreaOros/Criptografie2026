@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubstitutionCipher
 {
-    internal class CaesarCipher : RotationCipher
+    public class CaesarCipher : RotationCipher
     {
         public CaesarCipher(): base(3)
         {

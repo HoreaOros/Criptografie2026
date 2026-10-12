@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubstitutionCipher
 {
-    abstract internal class SubstitutionCipher : EncryptionAlgorithm
+    abstract public class SubstitutionCipher : EncryptionAlgorithm
     {
         protected string Substitute(string message, Dictionary<char, char> key)
         {

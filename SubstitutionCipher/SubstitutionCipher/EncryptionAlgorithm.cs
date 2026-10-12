@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubstitutionCipher
 {
-    abstract internal class EncryptionAlgorithm
+    abstract public class EncryptionAlgorithm
     {
         protected string? plainText;
         protected string? cipherText;

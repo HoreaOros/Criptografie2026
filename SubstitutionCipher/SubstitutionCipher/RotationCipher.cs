@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubstitutionCipher
 {
-    internal class RotationCipher : SubstitutionCipher
+    public class RotationCipher : SubstitutionCipher
     {
         protected int n;
         protected override void GenerateDecryptionKey()
